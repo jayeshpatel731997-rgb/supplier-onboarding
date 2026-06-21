@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -16,23 +14,33 @@
 # production
 /build
 
-# misc
-.DS_Store
-*.pem
+# local environment and deployment state
+.env
+.env*.local
+.vercel
 
-# debug
+# logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
 
-.vercel
+# Python tooling from the repository template
+__pycache__/
+*.py[codz]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# editor and OS files
+.DS_Store
+*.pem
+.idea/
+.vscode/
+tempCodeRunnerFile.py
